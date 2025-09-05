@@ -1,7 +1,7 @@
-import './sass/main.scss';
+import './sass/Main/main.scss';
 import {Routes, Route} from 'react-router-dom';
 
-import Layout from './component/Layout/Layout.jsx';
+import Layout from './components/Layout/Layout'
 
 import Home from './pages/Home';
 import About from './pages/About';
