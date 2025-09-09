@@ -9,7 +9,7 @@ function Header(){
             <nav className='header__nav'>
                 <ul className='nav__list'>
                     <li className='nav__item'>
-                        <NavLink to='/Home'>Accueil</NavLink>
+                        <NavLink to='/'>Accueil</NavLink>
                     </li>
                     <li className='nav__item'>
                         <NavLink to='/About'>A Propos</NavLink>

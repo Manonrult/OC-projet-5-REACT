@@ -5,7 +5,7 @@ import LogementCard from '../components/Logement/LogementContainer.jsx';
 function Home(){
     return (
         <div>
-            <Banner backgroundImage={bannerImage}>
+            <Banner backgroundImage={bannerImage} bannerType="home">
                 <h1>Chez vous, partout et ailleurs</h1>
             </Banner>
             <LogementCard />

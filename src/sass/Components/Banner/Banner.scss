@@ -3,7 +3,7 @@
 
 .banner{
     width: auto;
-    height: 13.9rem;
+    padding-top: 17%;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -14,6 +14,7 @@
     margin-top: 2.5rem;
     margin-bottom: 1rem;
 
+
     &::after{    
         content:'';
         position: absolute;
@@ -21,22 +22,28 @@
         left: 0;
         width:100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
         z-index: 1;
-        border-radius: 25px;
+        border-radius: 25px; 
     }
+
+    &--home::after {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .banner--about::after {
+       background-color: rgba(0, 0, 0, 0.3); // opacité plus forte pour about
+     }
     
     h1{
         z-index: 2;
         @include title-style(48px, $third-color);
         font-size: 4vw;
-        
-     }
+    }
+
+
 @media (max-width: 768px){
-    height: 6.9rem;
+    padding-top: 35%;
     justify-content: flex-start;
-    padding-left: 0.5rem;
-    padding-right: 1rem;
+    
     h1{
         @include title-style(24px, $third-color);
         text-align: left;

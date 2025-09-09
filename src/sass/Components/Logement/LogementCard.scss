@@ -7,7 +7,6 @@
     overflow: hidden;
     aspect-ratio: 1 / 1; 
     align-items: flex-end;
-    transition: transform 0.2s ease;
     width: 100%; 
      &::after {
           content: "";
@@ -23,10 +22,7 @@
   pointer-events: none;
      }
   z-index: 0;
-    &:hover {
-   transform: translateY(-5px);
-   }
-
+   
     img{
     position: absolute;
     width: 100%;

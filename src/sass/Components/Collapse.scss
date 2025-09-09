@@ -1,0 +1,46 @@
+@use '../Variables/variables.scss';
+@use '../Mixins/mixins.scss';
+
+.collapse{
+    width: 100%;
+            
+    .collapse_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: variables.$primary-color;
+        color:variables.$third-color ;
+        border-radius: 5px;
+        @include mixins.title-style(18px, variables.$third-color);
+        padding: 0px 20px;
+        margin: 30px 100px;
+    }
+    &__arrow--up {
+        transform: rotate(180deg);
+    }
+    &__arrow--down {
+        transform: rotate(0deg);
+    }
+    &__content {
+        @include mixins.text-style(16px, variables.$secondary-color);
+        background-color: #f6f6f6;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: -30px;
+        margin-right: 100px;
+        margin-left: 100px;
+
+    }
+@media (max-width: 768px){
+    .collapse_header {
+        margin: 25px 0;
+        @include mixins.title-style(13px, variables.$third-color);
+    }
+    &__content {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: -25px;
+        @include mixins.text-style(12px, variables.$secondary-color);
+}
+}
+}
