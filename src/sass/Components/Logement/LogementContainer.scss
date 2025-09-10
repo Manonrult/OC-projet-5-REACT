@@ -1,15 +1,16 @@
 .logement-container {
-    background-color:#F6F6F6 ;
-    border-radius: 1rem; 
-    padding: 3rem;
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 30px; 
-           
-    @media (max-width: 768px) {
-        background-color: transparent;
-        grid-template-columns: 1fr; 
-        padding: 10px; 
-        gap: 15px;
-        }
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 3% 5%;
+
+  @media (max-width: 768px) {
+    background-color: transparent;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 15px;
+  }
 }
