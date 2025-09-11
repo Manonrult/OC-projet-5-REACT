@@ -28,11 +28,11 @@ const router = createBrowserRouter([
         path: '/housing/:id', //ID pour l'hébergement
         element: <Housing />,
       },
+      {
+        path: '*',
+        element: <ErrorPage />,
+      },
     ],
-  },
-  {
-    path: '*',
-    element: <ErrorPage />,
   },
 ]);
 

@@ -1,0 +1,41 @@
+@use '../Variables/variables';
+@use '../Mixins/mixins.scss';
+
+.error-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    @include mixins.title-style(288px, variables.$primary-color);
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    @media (max-width: 768px) {
+      margin-top: 17%;
+      margin-bottom: 20%;
+      @include mixins.title-style(96px, variables.$primary-color);
+    }
+  }
+
+  p {
+    @include mixins.text-style(36px, variables.$primary-color);
+    margin-bottom: 5%;
+
+    @media (max-width: 768px) {
+      margin-bottom: 30%;
+      @include mixins.title-style(18px, variables.$primary-color);
+      font-weight: 500;
+    }
+  }
+  .error-page-link {
+    @include mixins.text-style(18px, variables.$secondary-color);
+    margin-bottom: 5%;
+    &:visited {
+      color: variables.$secondary-color;
+    }
+    @media (max-width: 768px) {
+      @include mixins.text-style(14px, variables.$secondary-color);
+    }
+  }
+}
