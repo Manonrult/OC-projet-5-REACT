@@ -46,7 +46,7 @@ function Housing() {
           ? equipmentsRef.current.scrollHeight
           : 0;
 
-        var newMaxHeight = Math.max(descriptionHeight, equipmentsHeight);
+        let newMaxHeight = Math.max(descriptionHeight, equipmentsHeight);
 
         setMaxHeight(`${newMaxHeight}px`);
       }
@@ -60,7 +60,7 @@ function Housing() {
   }
 
   return (
-    <main>
+    <>
       <LogementSlideshow pictures={logement.pictures}></LogementSlideshow>
       <article className="fiche__logement">
         <div className="fiche__header">
@@ -95,7 +95,7 @@ function Housing() {
           />
         </div>
       </article>
-    </main>
+    </>
   );
 }
 export default Housing;
