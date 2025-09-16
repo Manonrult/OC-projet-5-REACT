@@ -1,0 +1,68 @@
+@use '../../../Variables/variables';
+@use '../../../Mixins/mixins';
+
+.fiche__logement {
+  margin: -4% 5% 2% 5%;
+  @media (max-width: 1200px) {
+    margin: -4% 5% 105px 5%;
+  }
+  .fiche__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+  }
+  .header__info {
+    h1 {
+      @include mixins.title-style(36px, variables.$primary-color);
+      text-align: left;
+      font-weight: 500;
+      margin-bottom: -1%;
+      @media (max-width: 768px) {
+        @include mixins.title-style(18px, variables.$primary-color);
+        text-align: left;
+        font-weight: 500;
+      }
+    }
+    p {
+      @include mixins.text-style(18px, variables.$secondary-color);
+
+      @media (max-width: 768px) {
+        @include mixins.text-style(14px, variables.$secondary-color);
+      }
+    }
+  }
+
+  .header__host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 25px;
+
+    @media (max-width: 768px) {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: -16%;
+      width: 100%;
+      margin-bottom: -18%;
+    }
+  }
+  .collapses__container {
+    display: flex;
+    gap: 6%;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  .collapse_header {
+    margin: 30px 0;
+  }
+  .collapse__content {
+    margin: -30px 0 0 0;
+  }
+}

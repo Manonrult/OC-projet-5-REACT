@@ -1,0 +1,21 @@
+@use '../Variables/variables.scss';
+@use '../Mixins/mixins.scss';
+
+.about__collapses {
+  .collapse_header {
+    margin: 30px 100px;
+  }
+
+  .collapse__content {
+    margin: -30px 100px 0;
+  }
+
+  @media (max-width: 768px) {
+    .collapse_header {
+      margin: 25px 25px;
+    }
+    .collapse__content {
+      margin: -25px 25px 0;
+    }
+  }
+}
