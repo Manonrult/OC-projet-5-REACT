@@ -2,6 +2,7 @@
 @use '../Mixins/mixins.scss';
 
 .about__collapses {
+  margin-bottom: 10px;
   .collapse_header {
     margin: 30px 100px;
   }
