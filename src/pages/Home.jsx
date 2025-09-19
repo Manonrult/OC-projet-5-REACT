@@ -1,6 +1,6 @@
 import Banner from '../components/Banner/Banner.jsx';
 import bannerImage from '../assets/banner-home.jpg';
-import LogementContainer from '../components/Logement/LogementContainer.jsx';
+import LogementContainer from '../components/LogementContainer/LogementContainer.jsx';
 
 function Home() {
   return (

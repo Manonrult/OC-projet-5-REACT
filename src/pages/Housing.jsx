@@ -1,12 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import data from '../data/donnees.json';
-import LogementSlideshow from '../components/Logement/Fiche/LogementSlideshow.jsx';
+import data from '../data/logements.json';
+import LogementSlideshow from '../components/LogementSlideshow/LogementSlideshow.jsx';
 import ErrorPage from './ErrorPage';
-import Loueur from '../components/Logement/Fiche/Loueur.jsx';
-import Tag from '../components/Logement/Fiche/Tag.jsx';
-import Rating from '../components/Logement/Fiche/Rating.jsx';
-import Collapse from '../components/Collapse.jsx';
+import Loueur from '../components/Loueur/Loueur.jsx';
+import Tag from '../components/Tags/Tag.jsx';
+import Rating from '../components/Rating/Rating.jsx';
+import Collapse from '../components/Collapse/Collapse.jsx';
 
 import '../sass/Components/Logement/Fiche/Housing.scss';
 import '../sass/Components/Logement/Fiche/Tag.scss';

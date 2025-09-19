@@ -4,7 +4,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
-import '../../../sass/Components/Logement/Fiche/LogementSlideshow.scss';
+import '../../sass/Components/Logement/Fiche/LogementSlideshow.scss';
 
 function LogementSlideshow({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);

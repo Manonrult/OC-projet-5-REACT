@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar as solidFaStar } from '@fortawesome/free-solid-svg-icons'; // Importe l'étoile pleine
-import '../../../sass/Components/Logement/Fiche/Rating.scss';
+import '../../sass/Components/Logement/Fiche/Rating.scss';
 
 function Rating({ rating }) {
   const totalStars = 5;
